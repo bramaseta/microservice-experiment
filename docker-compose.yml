@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  rest-service:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - SERVICE_TYPE=rest
+    networks:
+      - microservices-net
+
+  grpc-service:
+    build: .
+    ports:
+      - "50051:50051"
+    environment:
+      - SERVICE_TYPE=grpc
+    networks:
+      - microservices-net
+
+  benchmark-runner:
+    build: .
+    depends_on:
+      - rest-service
+      - grpc-service
+    environment:
+      - SERVICE_TYPE=benchmark
+    networks:
+      - microservices-net
+    volumes:
+      - ./results:/app/results
+
+networks:
+  microservices-net:
+    driver: bridge

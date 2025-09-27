@@ -1,0 +1,319 @@
+{
+  "benchmark_results": {
+    "scenarios": {
+      "Light Load": {
+        "REST": {
+          "protocol": "REST",
+          "total_requests": 50,
+          "successful_requests": 50,
+          "failed_requests": 0,
+          "success_rate": 100.0,
+          "total_time_seconds": 0.7875099182128906,
+          "requests_per_second": 63.49126384778217,
+          "avg_latency_ms": 15.668420791625977,
+          "min_latency_ms": 13.644933700561523,
+          "max_latency_ms": 18.478870391845703,
+          "p95_latency_ms": 17.434120178222656,
+          "p99_latency_ms": 18.478870391845703,
+          "avg_payload_size": 814.46,
+          "total_data_transferred": 40723
+        },
+        "gRPC": {
+          "protocol": "gRPC",
+          "total_requests": 50,
+          "successful_requests": 50,
+          "failed_requests": 0,
+          "success_rate": 100.0,
+          "total_time_seconds": 1.437885046005249,
+          "requests_per_second": 34.77329438741341,
+          "avg_latency_ms": 28.583173751831055,
+          "min_latency_ms": 22.049665451049805,
+          "max_latency_ms": 37.17184066772461,
+          "p95_latency_ms": 34.17801856994629,
+          "p99_latency_ms": 37.17184066772461,
+          "avg_payload_size": 799.82,
+          "total_data_transferred": 39991
+        },
+        "comparison": {
+          "avg_latency_ms": {
+            "winner": "REST",
+            "improvement_percent": 45.18306144844308,
+            "rest_value": 15.668420791625977,
+            "grpc_value": 28.583173751831055
+          },
+          "requests_per_second": {
+            "winner": "REST",
+            "improvement_percent": 82.58627767739935,
+            "rest_value": 63.49126384778217,
+            "grpc_value": 34.77329438741341
+          },
+          "avg_payload_size": {
+            "winner": "gRPC",
+            "improvement_percent": 1.797510006630158,
+            "rest_value": 814.46,
+            "grpc_value": 799.82
+          }
+        }
+      },
+      "Medium Load": {
+        "REST": {
+          "protocol": "REST",
+          "total_requests": 100,
+          "successful_requests": 100,
+          "failed_requests": 0,
+          "success_rate": 100.0,
+          "total_time_seconds": 0.33487987518310547,
+          "requests_per_second": 298.6145403491985,
+          "avg_latency_ms": 16.268503665924072,
+          "min_latency_ms": 12.103796005249023,
+          "max_latency_ms": 27.055740356445312,
+          "p95_latency_ms": 22.870779037475586,
+          "p99_latency_ms": 27.055740356445312,
+          "avg_payload_size": 814.76,
+          "total_data_transferred": 81476
+        },
+        "gRPC": {
+          "protocol": "gRPC",
+          "total_requests": 100,
+          "successful_requests": 100,
+          "failed_requests": 0,
+          "success_rate": 100.0,
+          "total_time_seconds": 0.6058990955352783,
+          "requests_per_second": 165.04398296164402,
+          "avg_latency_ms": 29.765663146972656,
+          "min_latency_ms": 22.737979888916016,
+          "max_latency_ms": 35.94493865966797,
+          "p95_latency_ms": 34.063100814819336,
+          "p99_latency_ms": 35.94493865966797,
+          "avg_payload_size": 802.96,
+          "total_data_transferred": 80296
+        },
+        "comparison": {
+          "avg_latency_ms": {
+            "winner": "REST",
+            "improvement_percent": 45.34472964504177,
+            "rest_value": 16.268503665924072,
+            "grpc_value": 29.765663146972656
+          },
+          "requests_per_second": {
+            "winner": "REST",
+            "improvement_percent": 80.93027991126223,
+            "rest_value": 298.6145403491985,
+            "grpc_value": 165.04398296164402
+          },
+          "avg_payload_size": {
+            "winner": "gRPC",
+            "improvement_percent": 1.4482792478766697,
+            "rest_value": 814.76,
+            "grpc_value": 802.96
+          }
+        }
+      },
+      "Heavy Load": {
+        "REST": {
+          "protocol": "REST",
+          "total_requests": 200,
+          "successful_requests": 200,
+          "failed_requests": 0,
+          "success_rate": 100.0,
+          "total_time_seconds": 0.3919708728790283,
+          "requests_per_second": 510.2419945926054,
+          "avg_latency_ms": 19.20724868774414,
+          "min_latency_ms": 11.512041091918945,
+          "max_latency_ms": 50.981760025024414,
+          "p95_latency_ms": 37.757158279418945,
+          "p99_latency_ms": 50.5220890045166,
+          "avg_payload_size": 816.38,
+          "total_data_transferred": 163276
+        },
+        "gRPC": {
+          "protocol": "gRPC",
+          "total_requests": 200,
+          "successful_requests": 200,
+          "failed_requests": 0,
+          "success_rate": 100.0,
+          "total_time_seconds": 0.6383249759674072,
+          "requests_per_second": 313.32002902893146,
+          "avg_latency_ms": 30.805433988571167,
+          "min_latency_ms": 22.67622947692871,
+          "max_latency_ms": 37.8880500793457,
+          "p95_latency_ms": 36.631107330322266,
+          "p99_latency_ms": 37.850141525268555,
+          "avg_payload_size": 799.05,
+          "total_data_transferred": 159810
+        },
+        "comparison": {
+          "avg_latency_ms": {
+            "winner": "REST",
+            "improvement_percent": 37.649803294866615,
+            "rest_value": 19.20724868774414,
+            "grpc_value": 30.805433988571167
+          },
+          "requests_per_second": {
+            "winner": "REST",
+            "improvement_percent": 62.85010446794338,
+            "rest_value": 510.2419945926054,
+            "grpc_value": 313.32002902893146
+          },
+          "avg_payload_size": {
+            "winner": "gRPC",
+            "improvement_percent": 2.1227859575197874,
+            "rest_value": 816.38,
+            "grpc_value": 799.05
+          }
+        }
+      }
+    }
+  },
+  "service_metrics": {
+    "REST": {
+      "protocol": "REST",
+      "total_requests": 354,
+      "avg_latency_ms": 12.509441645131947,
+      "avg_cpu_usage": 1.0110169491525423,
+      "avg_memory_usage": 81.0819209039548
+    },
+    "gRPC": {
+      "protocol": "gRPC",
+      "total_requests": 150,
+      "avg_latency_ms": 58.4,
+      "avg_cpu_usage": 12.8,
+      "avg_memory_usage": 61.2
+    }
+  },
+  "mece_analysis": {
+    "timestamp": "2025-09-27 18:41:16",
+    "protocols_compared": [
+      "REST",
+      "gRPC"
+    ],
+    "mece_analysis": {
+      "REST": {
+        "business_processing": {
+          "avg_response_time": 12.509441645131947,
+          "cpu_per_request": 0.0028559800823518143,
+          "processing_efficiency": 79.93961907877402
+        },
+        "data_transmission": {
+          "payload_size": 165,
+          "network_overhead": 49.5,
+          "compression_ratio": 1.0
+        },
+        "request_queuing": {
+          "max_concurrent_requests": 1,
+          "avg_queue_wait_time": 0,
+          "throughput_rps": 0
+        },
+        "system_management": {
+          "avg_memory_usage": 81.0819209039548,
+          "memory_per_request": 0.22904497430495704,
+          "gc_overhead_estimate": 0.10110169491525423
+        }
+      },
+      "gRPC": {
+        "business_processing": {
+          "avg_response_time": 58.4,
+          "cpu_per_request": 0.08533333333333334,
+          "processing_efficiency": 17.123287671232877
+        },
+        "data_transmission": {
+          "payload_size": 99.0,
+          "network_overhead": 9.9,
+          "compression_ratio": 0.6
+        },
+        "request_queuing": {
+          "max_concurrent_requests": 1,
+          "avg_queue_wait_time": 0,
+          "throughput_rps": 0
+        },
+        "system_management": {
+          "avg_memory_usage": 61.2,
+          "memory_per_request": 0.40800000000000003,
+          "gc_overhead_estimate": 1.2800000000000002
+        }
+      }
+    },
+    "comparison": {
+      "business_processing": {
+        "avg_response_time": {
+          "winner": "gRPC",
+          "improvement_percent": 366.84737542004024,
+          "rest_value": 12.509441645131947,
+          "grpc_value": 58.4
+        },
+        "cpu_per_request": {
+          "winner": "gRPC",
+          "improvement_percent": 2887.8826487845777,
+          "rest_value": 0.0028559800823518143,
+          "grpc_value": 0.08533333333333334
+        },
+        "processing_efficiency": {
+          "winner": "REST",
+          "improvement_percent": 366.8473754200403,
+          "rest_value": 79.93961907877402,
+          "grpc_value": 17.123287671232877
+        }
+      },
+      "data_transmission": {
+        "payload_size": {
+          "winner": "REST",
+          "improvement_percent": 66.66666666666666,
+          "rest_value": 165,
+          "grpc_value": 99.0
+        },
+        "network_overhead": {
+          "winner": "REST",
+          "improvement_percent": 400.0,
+          "rest_value": 49.5,
+          "grpc_value": 9.9
+        },
+        "compression_ratio": {
+          "winner": "REST",
+          "improvement_percent": 66.66666666666667,
+          "rest_value": 1.0,
+          "grpc_value": 0.6
+        }
+      },
+      "request_queuing": {
+        "max_concurrent_requests": {
+          "winner": "gRPC",
+          "improvement_percent": 0.0,
+          "rest_value": 1,
+          "grpc_value": 1
+        },
+        "avg_queue_wait_time": {
+          "winner": "Tie",
+          "improvement_percent": 0,
+          "rest_value": 0,
+          "grpc_value": 0
+        },
+        "throughput_rps": {
+          "winner": "Tie",
+          "improvement_percent": 0,
+          "rest_value": 0,
+          "grpc_value": 0
+        }
+      },
+      "system_management": {
+        "avg_memory_usage": {
+          "winner": "REST",
+          "improvement_percent": 32.48679886267123,
+          "rest_value": 81.0819209039548,
+          "grpc_value": 61.2
+        },
+        "memory_per_request": {
+          "winner": "gRPC",
+          "improvement_percent": 78.13095495244403,
+          "rest_value": 0.22904497430495704,
+          "grpc_value": 0.40800000000000003
+        },
+        "gc_overhead_estimate": {
+          "winner": "gRPC",
+          "improvement_percent": 1166.0519698239736,
+          "rest_value": 0.10110169491525423,
+          "grpc_value": 1.2800000000000002
+        }
+      }
+    }
+  }
+}
